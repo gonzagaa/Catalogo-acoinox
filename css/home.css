@@ -1,0 +1,265 @@
+#home {
+    height: 60vh;
+    overflow: hidden;
+  
+    position: relative;
+    z-index: 25;
+  
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+
+    transition: all 200ms ease-in-out;
+    margin-bottom: 0;
+
+    border-radius: 0 0 3rem 3rem;
+  }
+
+#home img.bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  left: 0;
+  top: 0;
+}
+
+#home img.bg.bgmobile {
+  aspect-ratio: 9/16;
+  filter: brightness(.4);
+}
+
+#home img.bg.bgdesktop {
+  display: none;
+}
+
+  #home img.lines {
+    width: 10rem;
+    position: absolute;
+    top: 25%;
+    left: 2%;
+    opacity: .1;
+  }
+
+  #home .wrapper {
+    position: relative;
+    z-index: 3;
+    height: 100%;
+  }
+
+  #home .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+    height: 100%;
+  }
+  
+  #home .circle {
+    position: absolute;
+    bottom: 0;
+    top: 620px;
+    z-index: 13;
+    transition: all 2s;
+  }
+  
+  #home.on .circle {
+    transform: translate(0, -600px);
+  }
+  
+  #home .blush {
+      width: 1000px;
+      height: 1000px;
+      background: radial-gradient(#0101ca96, transparent 50%);
+      border-radius: 50%;
+      position: absolute;
+      z-index: -1;
+      top: -35rem;
+      left: -50rem;
+      opacity: .2;
+  
+      animation: moveblush infinite 4s linear;
+  }
+  
+  #home .blush.dois {
+    background: radial-gradient(#0101ca96, transparent 50%);
+    top: initial;
+    left: initial;
+    bottom: -45rem;
+    right: -60rem;
+  }
+  
+  #home .eclipse {
+    animation: Rotation linear infinite 10s;
+    position: absolute;
+    opacity: .4;
+    bottom: -50rem;
+    left: -50rem;
+  }
+  
+  @keyframes Rotation {
+    0% {
+      transform: rotate(0);
+    }
+  
+    100% {
+      transform: rotate(-360deg);
+    }
+  }
+  
+  #home img.logo {
+    margin-bottom: 2rem;
+    width: 5rem;
+  }
+
+  #home .text {
+    margin-bottom: 8rem;
+    position: relative;
+    z-index: 4;
+  }
+
+  #home img.logo {
+    width: 15rem;
+  }
+  
+  #home h1 {
+    color: var(--color-text);
+    font-weight: 400;
+    line-height: 1.1;
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+  
+  #home h1 span {
+    font-weight: 700;
+  }
+
+  #home p {
+    font-size: 1.5rem;
+    font-weight: 300;
+    color: #fafafa;
+  }
+
+  #home p span {
+    font-weight: 500;
+  }
+
+#home .image img {
+  width: 100%;
+}
+
+#home .image img.mobile {
+  position: absolute;
+  top: 26%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+  z-index: 1;
+}
+
+
+#home .image img.desktop {
+  display: none;
+}
+
+#home a button {
+  margin-top: 2rem;
+}
+
+@media (min-width: 768px) {
+
+}
+
+@media (min-width: 1080px) {
+    header#home {
+      justify-content: center;
+      position: relative;
+
+      height: 65vh;
+      z-index: 1;
+
+      border-radius: 0 0 10rem 10rem;
+    }
+
+    header#home img.bg.bgmobile {
+      display: none;
+    }
+
+    header#home img.bg.bgdesktop {
+      display: inline;
+      filter: brightness(.4);
+    }
+
+    header#home img.lines {
+      width: 15rem;
+      position: absolute;
+      top: -10%;
+      left: 2%;
+      opacity: .2;
+    }
+
+    header#home::after {
+      display: none;
+    }
+
+    header#home .image img.mobile {
+      display: none;
+    }
+
+    header#home .image img.desktop {
+      display: inherit;
+      width: 60%;
+      position: absolute;
+      right: -10%;
+      bottom: 0;
+      z-index: 1;
+
+    }
+
+    header#home .content {
+        text-align: center;
+        align-items: center;
+
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 3rem;
+      }
+
+      header#home .text {
+        margin-top: initial;
+        margin-bottom: initial;
+      }
+    
+      header#home .circle {
+        top: 820px;
+        width: 100%;
+      }
+
+      header#home .content .text {
+        text-align: center;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+
+        position: relative;
+        z-index: 2;
+
+        padding-inline: 15%;
+      }
+    
+      header#home .content h1 {
+        font-size: 5.5rem;
+        line-height: 1;
+    
+        margin-bottom: 1rem;
+      }
+    
+      header#home .content p {
+        font-size: 2rem;
+      }
+
+      header#home a button {
+        margin-top: 3rem;
+      }
+}
+
