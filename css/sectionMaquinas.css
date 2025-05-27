@@ -1,0 +1,57 @@
+#maquians {
+    overflow: hidden;
+    position: relative;
+}
+
+#maquinas .cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+#maquinas .card {
+    overflow: hidden;
+    border-radius: 1rem;
+}
+
+#maquinas .card img {
+    width: 100%;
+
+    aspect-ratio: 16/6;
+    object-fit: cover;
+}
+
+#maquinas .cards .card .text {
+    background: #e7e7e7;
+    padding: 2rem;
+
+    display: flex;
+    align-items: start;
+    text-align: left;
+    flex-direction: column;
+
+    margin-top: -.5rem;
+}
+
+#maquinas .cards .card .text h3 {
+    font-size: 1.8rem;
+    margin-top: 1rem;
+}
+
+#maquinas .cards .card .text p {
+    font-size: 1.4rem;
+    font-weight: 300;
+}
+
+@media (min-width: 1080px) {
+    section#maquinas .cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+    section#maquinas .cards .card .text {
+        padding: 3rem;
+    }
+}

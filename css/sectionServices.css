@@ -1,0 +1,49 @@
+#services {
+    position: relative;
+    overflow: hidden;
+}
+
+#services .cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+#services .cards .card {
+    background: #e7e7e7;
+    padding: 2rem;
+    border-radius: 1rem;
+
+    display: flex;
+    align-items: start;
+    text-align: left;
+    flex-direction: column;
+}
+
+#services .cards .card img {
+    width: 5rem;
+}
+
+#services .cards .card h3 {
+    font-size: 2rem;
+    margin-top: 1rem;
+}
+
+#services .cards .card p {
+    font-size: 1.4rem;
+    font-weight: 300;
+}
+
+@media (min-width: 1080px) {
+    section#services .cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    }
+
+    section#services .cards .card {
+        padding: 4rem;
+        height: 100%;
+    }
+}

@@ -116,6 +116,7 @@
     margin-bottom: 8rem;
     position: relative;
     z-index: 4;
+    width: 100%;
   }
 
   #home img.logo {
@@ -126,7 +127,7 @@
     color: var(--color-text);
     font-weight: 400;
     line-height: 1.1;
-    font-size: 3rem;
+    font-size: 2.2rem;
     margin-bottom: 1rem;
   }
   
@@ -135,9 +136,9 @@
   }
 
   #home p {
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     font-weight: 300;
-    color: #fafafa;
+    color: #bebebe;
   }
 
   #home p span {
@@ -244,18 +245,18 @@
         position: relative;
         z-index: 2;
 
-        padding-inline: 15%;
+        padding-inline: 25%;
       }
     
       header#home .content h1 {
-        font-size: 5.5rem;
+        font-size: 4.5rem;
         line-height: 1;
     
         margin-bottom: 1rem;
       }
     
       header#home .content p {
-        font-size: 2rem;
+        font-size: 1.6rem;
       }
 
       header#home a button {

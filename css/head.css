@@ -29,7 +29,7 @@ header p span {
 
 @media (min-width: 1080px) {
     header {
-        margin-bottom: 8rem;
+        margin-bottom: 4rem;
         padding-inline: 10%;
     }
     
